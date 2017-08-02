@@ -89,29 +89,34 @@ sample.addEventListener("mouseover", zmienKolor);
 
  */
 
-function wykonaj(event) {
+function wykonaj(event, str) {
 
     var e = event || window.event;
 
-    var lala = document.getElementById('lala');
 
 
-    lala.innerHTML = e.clientX;
+    var lala = document.getElementById("lala");
 
-var tooltip = document.getElementById('tooltip');
 
-// tooltip.style.display = "block";
+    lala.innerHTML = e.clientX + " " + str;
 
-tooltip.style.left = e.clientX + "px";
-    tooltip.style.top = e.clientY + "px";
+var tooltip = document.getElementById("tooltip");
+
+tooltip.style.display = "block";
+
+tooltip.style.left = e.clientX + 10 +  "px";
+    tooltip.style.top = e.clientY + 10 + "px";
 }
 
 
 window.onload = function () {
 
-    var test = document.getElementById('lorem');
+    var test = document.getElementById("lorem");
 
-    test.onmousemove = wykonaj;
+    test.onmousemove = function (event) {
+
+wykonaj(event, "jakis tekst");
+    };
 
 }
 
