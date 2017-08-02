@@ -75,6 +75,45 @@ sample.addEventListener("mouseover", zmienKolor);
 }
 
 
+//*************************************************************
+//automatycznie przesyłany do funkcji  obiekt event
+
+
+/*
+ altKey, ctrlKey, shiftKey - czy podczas wywołania eventu były wciśnięte klawisze alt, ctrl, shift?
+ button - które przyciski myszy zostały kliknięte (nie działa w każdym evencie)
+ clientX, clientY - w którym miejscu jest mycha względem 0,0
+ keyCode - zwraca w postaci liczby jaki klawisz został wciśnięty, String.fromCharCode(e.keyCode) zwróci jaka to wartość
+ target.tagName - nazwa tagu elementu który wywołał zdarzenie wspierane w każdej przeglądarce prócz IE 6-8
+ użyj srcElement dla IE na starcie można napisać: var srcElement = e.target ? e.target : e.srcElement;
+
+ */
+
+function wykonaj(event) {
+
+    var e = event || window.event;
+
+    var lala = document.getElementById('lala');
+
+
+    lala.innerHTML = e.clientX;
+
+var tooltip = document.getElementById('tooltip');
+
+// tooltip.style.display = "block";
+
+tooltip.style.left = e.clientX + "px";
+    tooltip.style.top = e.clientY + "px";
+}
+
+
+window.onload = function () {
+
+    var test = document.getElementById('lorem');
+
+    test.onmousemove = wykonaj;
+
+}
 
 
 
