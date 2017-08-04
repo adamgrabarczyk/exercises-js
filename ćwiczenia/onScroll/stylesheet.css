@@ -5,7 +5,8 @@
     height: 19px;
     padding: 20px;
     position: fixed;
-    bootom: 15px;
+    bottom: 15px;
     right: 15px;
     cursor: pointer;
+    display: none;
 }
