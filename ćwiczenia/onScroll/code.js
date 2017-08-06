@@ -17,7 +17,7 @@ window.onload = function () {
 
         var yScroll = window.pageYOffset
 
-        if(yScroll > 200)
+        if(yScroll > 20)
 topButton.style.display = "block";
         else
             topButton.style.display = "none";
