@@ -14,6 +14,11 @@
 
 
 
+function isNumber(valueToCheck) {
+
+    return !isNaN(valueToCheck);
+}
+
 
 window.onload = function () {
 
@@ -21,12 +26,21 @@ window.onload = function () {
     var poleTekstowe = document.getElementById("myForm").poleTekstowe;// elements[1]  - w taki spób też można pobierać elementy
 var info = document.getElementById("info");
 
-    poleLiczbowe.onkeydown = function (e) {
+    poleLiczbowe.onkeyup = function (e) {
 
-        info.innerHTML = String.fromCharCode(e.which);
-    };
+        if(isNumber(this.value) && this.value == "") {
+
+            this.style.backgroundColor = 'green';
+            info.innerHTML = "poprawne dane";
+        }
+        else {
+            e.preventDefault();
+
+            this.style.backgroundColor = "red";
 
 
+            info.innerHTML = "wpisz liczbę";
+        }};
 
 }
 
