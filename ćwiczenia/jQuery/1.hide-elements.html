@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>1.hide-elements</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<p class="sample" id="p-first">P1 </p>
+<p class="sample">P2 </p>
+<p class="sample">P3 </p>
+<p class="sample2">P4 </p>
+<p class="sample2">P5 </p>
+<p class="sample">P6 </p>
+<p class="sample2">P7 </p>
+
+
+
+<script>
+    var $paragraphs = $('p.sample');
+    $paragraphs.hide();
+
+    console.log($paragraphs);
+
+    // alternatywnie
+    //    $('p.isa').hide();
+
+	/*
+
+	  Napisz kod, który przy pomocy jQuery znajdzie wszystkie paragrafy
+	 z klasą 'sample' i wynik wyszukiwania zapisze do zmiennej globalnej
+
+	 */
+</script>
+
+</body>
+</html>
