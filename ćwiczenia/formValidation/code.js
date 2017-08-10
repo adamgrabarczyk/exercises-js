@@ -20,27 +20,40 @@ function isNumber(valueToCheck) {
 }
 
 
+var isEveryThinkOkey = true;
+
+
 window.onload = function () {
 
     var poleLiczbowe = document.getElementById("myForm").poleLiczbowe; // elements[0]
     var poleTekstowe = document.getElementById("myForm").poleTekstowe;// elements[1]  - w taki spób też można pobierać elementy
-var info = document.getElementById("info");
+    var submitMyForm = document.getElementById("myForm").submitMyForm; //elements[2]
+    var info = document.getElementById("info");
 
     poleLiczbowe.onkeyup = function (e) {
 
-        if(isNumber(this.value) && this.value == "") {
+        if(isNumber(this.value)) {
 
             this.style.backgroundColor = 'green';
             info.innerHTML = "poprawne dane";
+            var isEveryThinkOkey = true;
         }
         else {
             e.preventDefault();
 
             this.style.backgroundColor = "red";
 
-
             info.innerHTML = "wpisz liczbę";
+            var isEveryThinkOkey = false;
         }};
+
+
+    submitMyForm.onclick = function (e) {
+
+        if (!isEveryThinkOkey)
+e.preventDefault()
+
+    }
 
 }
 
