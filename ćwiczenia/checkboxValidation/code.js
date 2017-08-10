@@ -2,7 +2,7 @@
 
 
 
-
+// Checkbox validation
 
 
 window.onload = function () {
@@ -30,4 +30,27 @@ info.innerHTML += tmp + "<br>";
         e.preventDefault();
     }
 
+
+
+// Radio validation
+
+    myForm.akceptacjaRegualminu[0].onclick = function () {
+
+      button.disabled = false
+
+    }
+
+    myForm.akceptacjaRegualminu[1].onclick = function () {
+
+        button.disabled = true
+
+    }
+
+
+
 }
+
+
+
+
+

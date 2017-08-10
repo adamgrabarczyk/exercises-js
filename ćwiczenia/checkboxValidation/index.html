@@ -11,13 +11,22 @@
 <body>
 
 <form id="myForm">
+
+    <div>
     <label><input type="checkbox" name="name" value="sql">sql</label>
     <label><input type="checkbox" name="name" value="php">php</label>
     <label><input type="checkbox" name="name" value="js">js</label>
     <label><input type="checkbox" name="name" value="java">java</label>
+    </div>
+    <div>
+        akceptujesz regulamin?
+    </div>
+    <div>
+        <label><input type="radio" name="akceptacjaRegualminu" value="false">TAK</label>
+        <label><input type="radio" name="akceptacjaRegualminu" value="true" checked>NIE</label>
+    </div>
 
-
-<input type="button" name="submitButton" value="dodaj" id="submit">
+<input type="button" name="submitButton" value="dodaj" id="submit" disabled>
 </form>
 <div id="info"></div>
 
