@@ -34,7 +34,10 @@ info.innerHTML += tmp + "<br>";
 
 // Radio validation
 
-    myForm.akceptacjaRegualminu[0].onclick = function () {
+
+    for(var i =0; i < myForm.akceptacjaRegualminu.length; i++)
+
+    myForm.akceptacjaRegualminu[i].onclick = function () {
 
       button.disabled = false
 
@@ -42,7 +45,7 @@ info.innerHTML += tmp + "<br>";
 
     myForm.akceptacjaRegualminu[1].onclick = function () {
 
-        button.disabled = true
+        button.disabled = (this.value === "true"); 
 
     }
 
