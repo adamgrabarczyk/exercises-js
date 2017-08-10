@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style/base.css">
+	<title>3.css-classes</title>
+</head>
+<body>
+
+Tematy
+<ul>
+	<li class="sample">
+        Temat
+        <span class="opis" style="display:none">-JavaScript</span>
+    </li>
+	<li class="sample">
+        Temat
+        <span class="opis" style="display:none">JavaScript</span>
+    </li>
+	<li class="sample">
+        Temat
+        <span class="opis" style="display:none">JavaScript</span>
+    </li>
+</ul>
+Uczestnicy
+<ul>
+	<li class="sample2">Ania</li>
+	<li class="sample2">Agnieszka</li>
+	<li class="sample2">Marcin</li>
+	<li class="sample">Jan</li>
+</ul>
+
+<script src="lib/jquery-2.1.4.min.js"></script>
+<script>
+	$('.sample').click(function() {
+        $('.opis').hide();
+        $('.opis', this).show();
+//		$(this).children('.opis').show();
+	    $('.sample.green-background').removeClass('green-background');
+		$(this).addClass('green-background');
+	});
+
+
+	/*
+	 Dodaje obsługę klikania po elementach list
+	 tematów i uczestników spotkania.
+	 - Zawsze może być zakolorowany jeden i tylko jeden element
+	 - Jeżeli został kliknięty temat to kolorujemy tło na zielono i
+	 pokazujemy napis 'temat' (czyli elementy <span class="opis">...</span>)
+	 - Jeżeli został wybrany uczestnik to tylko kolorujemy tło na zielono
+
+	 Do kolorowania na zielono używamy klasy 'green-background'
+	 (patrz plik style/base.css)
+	 */
+
+</script>
+
+</body>
+</html>
