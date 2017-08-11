@@ -45,7 +45,7 @@ info.innerHTML += tmp + "<br>";
 
     myForm.akceptacjaRegualminu[1].onclick = function () {
 
-        button.disabled = (this.value === "true"); 
+        button.disabled = (this.value === "true");
 
     }
 
