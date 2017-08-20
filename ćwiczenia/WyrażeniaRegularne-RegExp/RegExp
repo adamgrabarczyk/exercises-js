@@ -1,0 +1,84 @@
+REGEXP
+regular expression - regularne wyrażenia
+
+stringDoPrzeszukania.search(wzór) - szuka i zwraca indeks
+stringDoPrzeszukania.match(wzór) - szuka i zwraca w postaci tablicy
+regExp.exec(stringDoPrzeszukania) - to samo co wyżej tyle, że nie działa flaga global i zwracana jest tylko jedna wartość
+stringDoPrzeszukania.replace(wzór, "naCO"); - podmienia
+wzór.test(stringDoPrzeszukania); - sprawdza, czy po prostu coś takiego się znajduje w stringu
+
+Jakie wzory(wyrażenia) moze przyjmować RegExp? Oto znaki, które występują
+w nim (po pauzie co symbolizują):
+
+-----------------------------------------------------------------------------
+. - dowolny znak
+np. wzór /sm.k/ - znajdzie smak, smok etc.
+np. wzór /A..k/ - znajdzie Arek, etc.
+-----------------------------------------------------------------------------
+* - oznacza, że poprzedzający go znak może wystąpić 0 razy lub wiele razy, a znaczek 'i' od insensitive (nieczuły na wielkość znaków)
+np. wzór /M*arek/i - znajdzie Arek, arek, Marek, marek, mmarek,MMarek MMarek, MmMmmmmmarek ...
+-----------------------------------------------------------------------------
++ - oznacza, że poprzedzający go znak może wystąpić 1 raz lub więcej razy
+wniosek: musi wystąpić przynajmniej raz.
+np. wzór /M+arek/i - znajdzie Marek, marek, mmmmMMarek.
+-----------------------------------------------------------------------------
+? - oznacza, że poprzedzający znak może wystąpić 1 raz lub 0 razy
+wniosek: znak nie może się powtarzać, ale nie musi się pojawić.
+np. wzór /M?arek/i - znajdzie Arek, arek, Marek, marek.
+-----------------------------------------------------------------------------
+{n} - znajduje dokładnie n powtórzeń poprzedzającego go znaku
+np. wzór /Zo{2}/ - znajdzie nam tylko Zoo.
+-----------------------------------------------------------------------------
+{n,} - znajduje conajmniej n powtorzen poprzedzajacego go znaku
+np. wzór /Zo{2,}/ - znajdzie nam Zoo, Zooooo, Zoooooooo
+-----------------------------------------------------------------------------
+{n,m} - znajduje minimalnie n potwórzeń, maksymalnie m potwórzeń
+np. wzór /Zo{2,4}/ - znajdzie tylko Zoo, Zooo, Zoooo
+-----------------------------------------------------------------------------
+^ - upewnia się, że są to pierwsze znaki z całego stringa
+np. wzór /^za/ - znajdzie tylko "za" z zawał, zaklinacz, ale nie znajdzie
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+[ao] - to co znajduje się pomiędzy kwadratowymi nawiasami,
+czyli "ao" jest poszukiwane jako pojedyńczy znak.
+np. wzór /sm[ao]k/ - znajdzie smok, smak, ale nie znajdzie smgk, smhk etc.
+
+[ąśłóżźćĄŚŁÓŻŹĆ]+ - polskie znaki więcej niż jedno
+-----------------------------------------------------------------------------
+[^ao] - to co znajduje sie pomiedzy kwadratowymi nawiasami,
+czyli "ao" jest wykluczone z poszukiwania
+np. wzór /sm[^ao]k/ - znajdzie wszystko prócz smak i smok.
+-----------------------------------------------------------------------------
+[a-d] - w danym miejscu szukany jest zakres liter od a do d,
+czyli a, b, c, d
+np. wzór /przykl[a-d]/ - znajdzie przykla, przyklb, przyklc, przykld.
+Wniosek: [0-9] - l. calkowite to samo robi /przykl\d/
+		 [a-z] - alfabet
+		 /w - znajduje jakikolwiek znak alfanumeryczny to samo co [A-Za-z0-9_]
+-----------------------------------------------------------------------------
+[^a-d] - w danym miejscu szukany jest zakres liter nie należących od a do d.
+np. wzor /przykl[^a-d]/ - nie znajdzie tylko przykla, przyklb, przyklc, przykld.
+-----------------------------------------------------------------------------
+\ - pozwala nam interpretować jakichś znak dosłownie np. mając znak *,
+który oznacza, że chcemy wybrać poprzedzający go znak 0 lub więcej razy, możemy "wyłączyć"
+jego działanie za pomocą \ (backslash)
+np.
+    wzór /K\*\*\*/ znajdzie nam K***
+-----------------------------------------------------------------------------
+\s - znajduje biały znak
+-----------------------------------------------------------------------------
+(x) - oznacza, to że zapamiętuje x;
+np.
+var d = "AlaArkadiusz";
+var e = d.replace(/(A)(l)(a)/gi, "$3$2$1");
+da nam w zmiennej e: alAArkadiusz
+-----------------------------------------------------------------------------
+x(?=y) - znajduje x pod warunkiem ze zaraz po nim jest y
+var a = "Artur Wlodarczyk, Arkadiusz Kowalski, Arkadiusz Nowak";
+var b = a.replace(/Artur.(?=Wlodarczyk)/gi, "");
+-----------------------------------------------------------------------------
+x(?!y) - odwrotność x(?=y), znajduje x pod warunkem ze po nim nie ma y
+-----------------------------------------------------------------------------
+x|y - znajduje x lub y
+np. wzór /jpg|gif/gi - znajdzie nam w zmiennej b = "kraojobraz.GIF", slowo GIF.
+Wniosek: mozemy sprawdzić czy jakiś plik jest plikiem graficznym.
