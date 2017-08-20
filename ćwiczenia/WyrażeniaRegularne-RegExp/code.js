@@ -27,7 +27,7 @@ window.onload = function () {
 
     var imie = "arkadiusz Marek Darek";
 
-    var result = /[A-Z][a-zA-Z]{1,6}$/g.test(imie);
+    var result = imie.match(/[A-Z][a-zA-Z]{1,6}$/g);
 
 
     info.innerHTML = result;
