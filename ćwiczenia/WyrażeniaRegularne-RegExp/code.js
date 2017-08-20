@@ -23,7 +23,7 @@ window.onload = function () {
 
     var indeksy = "A-56 B-12  K-51 A-53";
 
-    var result = indeksy.match(/[0-9]/g);
+    var result = indeksy.match(/[0-9]{1,}/g);
 
     info.innerHTML = result;
 
