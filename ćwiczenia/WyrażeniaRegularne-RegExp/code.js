@@ -21,9 +21,9 @@ window.onload = function () {
 
     var info = document.getElementById('info');
 
-    var indeksy = "A-56 B-12  K-51 A-53";
+    var indeksy = "A-56 B-12  K-51 A-53 A.45";
 
-    var result = indeksy.match(/A-[0-9]{1,}/g);
+    var result = indeksy.match(/A\.[0-9]{1,}/g);
 
     info.innerHTML = result;
 
