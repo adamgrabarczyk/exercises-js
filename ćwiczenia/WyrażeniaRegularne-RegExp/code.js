@@ -25,11 +25,11 @@ window.onload = function () {
 
     // var result = indeksy.match(/A\.[0-9]{1,}/g);
 
-    var imie = "arkadiusz";
+    var imie = "arkadiusz Marek Darek";
 
-    var result = (/[a-z]/g).test(imie);
+    var result = /^[A-Z]/g.test(imie);
 
 
-    info.innerHTML = result; 
+    info.innerHTML = result;
 
 }
