@@ -30,6 +30,6 @@ window.onload = function () {
     var result = imie.match(/[a-z]/g);
 
 
-    info.innerHTML = result;
+    info.innerHTML = result.join("<br>");
 
 }
