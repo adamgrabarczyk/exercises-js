@@ -27,9 +27,9 @@ window.onload = function () {
 
     var imie = "arkadiusz";
 
-    var result = imie.match(/[a-z]/g);
+    var result = (/[a-z]/g).test(imie);
 
 
-    info.innerHTML = result.join("<br>");
+    info.innerHTML = result; 
 
 }
