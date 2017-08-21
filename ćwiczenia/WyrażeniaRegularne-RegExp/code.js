@@ -27,7 +27,7 @@ window.onload = function () {
 
     var imie = "Dąręk";
 
-    var result = imie.match(/^[A-Z][a-zA-ZąęśłóżźćĄŚŁÓŻŹĆ]*/g);
+    var result = imie.match(/^[A-Z][^0-9]*/g);
 
 
     info.innerHTML = result;
