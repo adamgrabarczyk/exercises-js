@@ -25,11 +25,14 @@ window.onload = function () {
 
     // var result = indeksy.match(/A\.[0-9]{1,}/g);
 
-    var imie = "arkadiusz Marek Darek";
+    var imie = "Dąręk";
 
-    var result = imie.match(/[A-Z][a-zA-Z]{1,6}$/g);
+    var result = imie.match(/^[A-Z][a-zA-ZąęśłóżźćĄŚŁÓŻŹĆ]*/g);
 
 
     info.innerHTML = result;
 
 }
+
+
+// 16.00 koniec
