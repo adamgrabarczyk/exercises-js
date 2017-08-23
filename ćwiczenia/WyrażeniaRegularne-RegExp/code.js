@@ -35,7 +35,10 @@ window.onload = function () {
     var d = "AlaArkadiusz";
     var e = d.replace(/(A)(l)(a)/gi, "$3$2$1");
 
-    info.innerHTML = e;
+    var a = "Artur Wlodarczyk, Arkadiusz Kowalski, Arkadiusz Nowak";
+    var b = a.replace(/Artur.(?=Wlodarczyk)/gi, "");
+
+    info.innerHTML = b;
 
 }
 
