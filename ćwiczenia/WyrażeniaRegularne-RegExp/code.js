@@ -32,7 +32,15 @@ window.onload = function () {
 
     // var result = imie.match(/^[A-Z][a-zA-Z]+/g);
 
-    var  result = src.match(/jpg/gi)
+    var  result = src.match(/jpg|png/gi)
+
+
+var regExp = /A\.?\d{1,}/g
+
+    regExp.exec(indeksy)
+
+
+
 
 
 
