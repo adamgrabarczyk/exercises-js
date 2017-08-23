@@ -31,7 +31,11 @@ window.onload = function () {
 
     var  result =indeksy.match(/A\.?\d{1,}/g)
 
-    info.innerHTML = result;
+
+    var d = "AlaArkadiusz";
+    var e = d.replace(/(A)(l)(a)/gi, "$3$2$1");
+
+    info.innerHTML = e;
 
 }
 
