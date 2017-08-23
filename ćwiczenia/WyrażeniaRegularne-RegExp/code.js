@@ -25,9 +25,9 @@ window.onload = function () {
 
     // var result = indeksy.match(/A\.[0-9]{1,}/g);
 
-    var imie = "Dąręk";
+    var imie = "Dsadhjasad";
 
-    var result = imie.match(/^[A-Z][^0-9]*/g);
+    var result = imie.match(/^[A-Z][a-zA-Z]+/g);
 
 
     info.innerHTML = result;
