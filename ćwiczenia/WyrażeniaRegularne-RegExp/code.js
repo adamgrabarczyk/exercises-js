@@ -41,10 +41,14 @@ var regExp = /A\.?\d{1,}/g
 
 
 
+var kodPocztowy = "80-271";
+
+    var czyKod = /[0-9]{2}-{0,1}[0-9]{3}/.test(kodPocztowy);
 
 
 
-    info.innerHTML = result;
+
+    info.innerHTML = czyKod;
 
 }
 
