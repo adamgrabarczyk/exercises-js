@@ -27,18 +27,16 @@ window.onload = function () {
 
     var imie = "Dąręk";
 
+
+    var src = "obrazek.jpg"
+
     // var result = imie.match(/^[A-Z][a-zA-Z]+/g);
 
-    var  result =indeksy.match(/A\.?\d{1,}/g)
+    var  result = src.match(/jpg/gi)
 
 
-    var d = "AlaArkadiusz";
-    var e = d.replace(/(A)(l)(a)/gi, "$3$2$1");
 
-    var a = "Artur Wlodarczyk, Arkadiusz Kowalski, Arkadiusz Nowak";
-    var b = a.replace(/Artur.(?=Wlodarczyk)/gi, "");
-
-    info.innerHTML = b;
+    info.innerHTML = result;
 
 }
 
