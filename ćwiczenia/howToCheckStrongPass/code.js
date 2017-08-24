@@ -18,13 +18,34 @@
 
 window.onload = function () {
 
+
+
     var info = document.getElementById("info");
 
-    var pw = "aAf4aasdsa";
+    var testButton = document.getElementById("myForm").test;
 
 
-    var regExpPAttern = /(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{7,}/ ;
+
+    // var pw = "aAf4aasdsa";
 
 
-    info.innerHTML = regExpPAttern.test(pw);
-}
+    testButton.onclick = function (e) {
+
+e.preventDefault();
+
+        var pw = document.getElementById("myForm").pw.value;
+
+        var regExpPAttern = /(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{7,}/ ;
+
+
+        if (regExpPAttern.test(pw))
+
+            document.getElementById("myForm").submit();
+        else
+
+        info.innerHTML = "za słabe hasło";
+
+
+    }
+
+    }
