@@ -1,0 +1,23 @@
+getDate()	- dzień miesiąca
+getMonth()	- miesiąc (numerujemy od: 0 - styczeń, 1 - luty etc.)
+getYear()	- zwraca liczbę reprezentującą rok (dla lat 1900 - 1999 jest to 2-cyfrowa liczba
+                  np. 99, a dla późniejszych jest to liczba 4-cyfrowa np. 2002)
+getFullYear()	- zwraca pełną (full) liczbę reprezentującą rok (np. 1999 lub 2000)
+getHours()	- aktualna godzina
+getMinutes()	- minuty
+getSeconds()	- sekundy
+getMilliseconds()- milisekundy
+
+getTime()	- aktualny czas w postaci milisekund od godziny 00:00 1 stycznia 1970 roku
+getDay()	- dzień tygodnia (0 dla niedzieli, 1 dla poniedziałku, 2 dla wtorku...)
+
+toLocaleTimeString() - zwraca część daty związaną z czasem w postaci hh/mm/ss zgodną z normami danego Państwa i
+                       tego co powie przeglądarka :-)
+toLocaleDateString - zgodnie z normami jak wyżej ale data
+toLocaleString - zgodnie z normami, ale i data i czas
+
+setTime - ustawia datę na...  w milisekundach od... użycie: var jutro = new Date(dzis.getTime() + 1000*60*60*24); (dodanie 1 dnia)
+setDate - zmienia dzień aktualnego miesiąca na... można wykorzystać np.: dzis.setDate(dzis.getDay() + 3);
+
+setHours
+setMinutes itd.
