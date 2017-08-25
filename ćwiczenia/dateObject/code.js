@@ -35,7 +35,8 @@ Date.prototype.getMothPL = function () {
 
 function howMenyTime(from, to) {
 
-    return "s:"+(from - to)/1000 + " " + "min:"+(from - to)/1000/60+ " " + "h:"+(from - to)/1000/60/60+ " " + "d:"+(from - to)/1000/60/60/24
+    return "s:"+(from - to)/1000 + " " + "min:"+(from - to)/1000/60
+        + " " + "h:"+ (from - to)/1000/60/60+ " " + "d:"+(from - to)/1000/60/60/24
 }
 
 
