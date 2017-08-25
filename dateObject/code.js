@@ -33,6 +33,14 @@ Date.prototype.getMothPL = function () {
 // }
 
 
+function howMenyTime(from, to) {
+
+    return "s:"+(from - to)/1000 + " " + "min:"+(from - to)/1000/60+ " " + "h:"+(from - to)/1000/60/60+ " " + "d:"+(from - to)/1000/60/60/24
+}
+
+
+
+
 window.onload = function () {
 
 var info = document.getElementById("info");
@@ -42,15 +50,15 @@ var info = document.getElementById("info");
 // info.innerHTML = today.getDate() + "/" + (today.getMonth()+1)+ "/" + today.getFullYear();
 
     var today = new Date;
-// var tomorow = new Date(today.getTime() + 1000*60*60*24);
+var tomorow = new Date(today.getTime() + 1000*60*60*24);
 
     // var tomorow = new Date(today.getFullYear(), today.getMonth(), today.getDay() + 3)
-    var tommorow = new Date("2017/08/26");
+    // var tommorow = new Date("2017/08/26");
 
     // var monthPL = getMonthFromNumber(tommorow.getMonth());
 
 
 
-    info.innerHTML = tommorow.getMothPL();
+    info.innerHTML = howMenyTime(tomorow, today);
 
 }
