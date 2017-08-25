@@ -31,7 +31,7 @@ var seld = this;
     }
 
     this.upDateHandler = function () {
-        this.handler.innerHTML = this.actualDate.toLocaleTimeString();
+        this.handler.innerHTML = this.getFormatedDate();
     }
 
 
@@ -39,7 +39,30 @@ var seld = this;
 
 
     this.getFormatedDate = function () {
-        
+
+        var hours = this.actualDate.getHours();
+        var minutes = this.actualDate.getMinutes();
+        var second = this.actualDate.getSeconds();
+
+
+        if(hours <10)
+            hours = "0" + hours
+
+        if(minutes <10)
+            minutes = "0" + minutes
+
+        if(second <10)
+            second = "0" + second
+
+
+
+        var suffix = "";
+        if (hours < 12)
+suffix = "AM"
+        else
+            hours -= 12;
+            suffix = "PM"
+        return hours + ":" + minutes + ":" + second + " " + suffix;
     }
 
 }
