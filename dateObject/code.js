@@ -19,7 +19,9 @@ var info = document.getElementById("info");
 
 var today = new Date();
 
-info.innerHTML = today.getDate() + "/" + (today.getMonth()+1)+ "/" + today.getFullYear();
+// info.innerHTML = today.getDate() + "/" + (today.getMonth()+1)+ "/" + today.getFullYear();
 
+
+    info.innerHTML = today.toLocaleString();
 
 }
