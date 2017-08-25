@@ -17,11 +17,14 @@ window.onload = function () {
 
 var info = document.getElementById("info");
 
-var today = new Date();
+
 
 // info.innerHTML = today.getDate() + "/" + (today.getMonth()+1)+ "/" + today.getFullYear();
 
+    var today = new Date;
+var tomorow = new Date(today.getTime() + 1000*60*60*24);
 
-    info.innerHTML = today.toLocaleString();
+
+    info.innerHTML = tomorow.getDay();
 
 }
