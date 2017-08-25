@@ -22,8 +22,9 @@ var info = document.getElementById("info");
 // info.innerHTML = today.getDate() + "/" + (today.getMonth()+1)+ "/" + today.getFullYear();
 
     var today = new Date;
-var tomorow = new Date(today.getTime() + 1000*60*60*24);
+// var tomorow = new Date(today.getTime() + 1000*60*60*24);
 
+    var tomorow = new Date(today.getFullYear(), today.getMonth(), today.getDay() + 3)
 
     info.innerHTML = tomorow.getDay();
 
