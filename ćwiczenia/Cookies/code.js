@@ -47,6 +47,24 @@ function removeCookie(name) {
 
 function getCookieByName(name) {
 
+    var cookies = document.cookie.split("; ");
+
+    for (var i = 0; i < cookies.length; i++) {
+
+       var splitCookie = cookies[i].split("=");
+
+       var cookiesName = splitCookie[0];
+
+       if (cookiesName === name) {
+
+           var cookieValue = splitCookie[1];
+
+           return cookieValue;
+
+       }
+    }
+
+
 }
 
 window.onload = function () {
@@ -73,7 +91,7 @@ createCookie("name","adam", 30);
         // document.cookie = "surname=Grabek;max-age="+ 60*60 + ";path=/";
 
 
-        info.innerHTML = document.cookie;
+        info.innerHTML = getCookieByName("name");
 
     };
 
