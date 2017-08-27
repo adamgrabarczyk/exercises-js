@@ -14,6 +14,41 @@
  */
 
 
+
+function createCookie(name, value, days) {
+
+    var expires = "";
+
+    if (days) {
+        var time = new Date();
+
+        time.setDate(time.getDate() + days)
+
+        expires = ";expires=" + time.toUTCString();
+    }
+
+    document.cookie = name + "=" + value + expires + ";path=/"
+}
+
+
+
+
+function removeCookie(name) {
+
+    var time = new Date();
+
+    time.setTime(time.getTime()- 1)
+
+
+    document.cookie = name + "=;expires="+time.toUTCString()+";path=/";
+
+}
+
+
+function getCookieByName(name) {
+
+}
+
 window.onload = function () {
 
 
@@ -30,14 +65,12 @@ window.onload = function () {
     button.onclick = function () {
 
 
-        var time = new Date();
-
-        time.setDate(time.getDate()+ 30)
 
         // document.cookie = "name=Adam;expires="+ time.toUTCString();
-
-        document.cookie = "name=Adam;max-age="+ 60*60 + ";path=/";
-        document.cookie = "surname=Grabek;max-age="+ 60*60 + ";path=/";
+createCookie("name","adam", 30);
+        createCookie("surname","grabek");
+        // document.cookie = "name=Adam;max-age="+ 60*60 + ";path=/";
+        // document.cookie = "surname=Grabek;max-age="+ 60*60 + ";path=/";
 
 
         info.innerHTML = document.cookie;
@@ -46,12 +79,8 @@ window.onload = function () {
 
 
 removebutton.onclick = function () {
-    var time = new Date();
 
-    time.setDate(time.getDate()- 1)
-
-
-    document.cookie = "name=;expires="+time.toUTCString()+"path=/";
+    removeCookie("surname");
 }
 
 
