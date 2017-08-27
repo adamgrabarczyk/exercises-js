@@ -27,7 +27,7 @@ function createCookie(name, value, days) {
         expires = ";expires=" + time.toUTCString();
     }
 
-    document.cookie = name + "=" + value + expires + ";path=/"
+    document.cookie = name + "=" + encodeURIComponent(value) + expires + ";path=/"
 }
 
 
@@ -59,7 +59,7 @@ function getCookieByName(name) {
 
            var cookieValue = splitCookie[1];
 
-           return cookieValue;
+           return decodeURIComponent(cookieValue);
 
        }
     }
@@ -86,7 +86,7 @@ window.onload = function () {
 
         // document.cookie = "name=Adam;expires="+ time.toUTCString();
 createCookie("name","adam", 30);
-        createCookie("surname","grabek");
+        createCookie("surname","grabek;adada");
         // document.cookie = "name=Adam;max-age="+ 60*60 + ";path=/";
         // document.cookie = "surname=Grabek;max-age="+ 60*60 + ";path=/";
 
