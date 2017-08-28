@@ -10,8 +10,20 @@ window.onload = function () {
 
     var cytaty = document.getElementById("cytaty")
 
+    var cytat = ["Bezpowrotnie stracona jest każda chwila, której nie wypełnia miłość.",
+    "Ludzie myślą czasem jak zabić czas, a to czas ich zabija","ylko życie poświęcone innym warte jest przeżycia.",
+    "Największym złem, na które cierpi świat, jest nie siła złych, lecz słabość dobrych"];
 
 
-info2.innerHTML = MAth.floor(Math.random()*5);
+
+    var autor = ["Torquato Tasso","Alphonse Allais",
+    "Albert Eintstein","Monteskiusz"];
+
+
+    var randomNumber = Math.floor(Math.random()*4);;
+
+
+    info2.innerHTML = randomNumber;
+cytaty.innerHTML = cytat[randomNumber];
 
 }
