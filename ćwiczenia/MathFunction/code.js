@@ -28,6 +28,8 @@ window.onload = function () {
 
     var y = -5;
 
+    var z = "2.54sa"
+
     // info.innerHTML = Math.round(x); zaokragla matematycznie do całości
 
 
@@ -42,7 +44,13 @@ window.onload = function () {
     // info.innerHTML = Math.pow(y, 2); podnosi do potegi wskazanej w 2 argumencie
 
 
-    
+    // info.innerHTML = Math.round(parseFloat(z));  przeparsowuje znaki na liczby
+
+
+    info.innerHTML = Math.random(); // wybiera losowe wartosci ze zbioru
+
+
+
 
 }
 
