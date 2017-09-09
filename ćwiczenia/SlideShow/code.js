@@ -26,6 +26,19 @@ window.onload = function () {
     slideShow.childNodes[0].setAttribute("class", "current");
 
 
+    var i = 0;
+
+
+setInterval(function () {
+
+    slideShow.childNodes[i % 3].setAttribute("class", "");
+
+    slideShow.childNodes[(i +1) % 3].setAttribute("class", "current");
+
+    i++;
+
+
+},1000)
 
 
 }
