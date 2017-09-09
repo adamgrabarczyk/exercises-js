@@ -14,15 +14,15 @@ function loadMoreImg () {
 
         images.appendChild(image)
 
-
-        var buttonClone = this.cloneNode(true);
-buttonClone.onclick = loadMoreImg; 
-
-        this.parentNode.removeChild(this);
+        if (i !== 4) {
+            var buttonClone = this.cloneNode(true);
+            buttonClone.onclick = loadMoreImg;
 
 
-        document.body.appendChild(buttonClone);
+            document.body.appendChild(buttonClone);
+        }
     }
+    this.parentNode.removeChild(this);
     }
 
 
