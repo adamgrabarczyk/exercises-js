@@ -38,7 +38,7 @@ setInterval(function () {
     i++;
 
 
-},1000)
+},5000)
 
 
 }
