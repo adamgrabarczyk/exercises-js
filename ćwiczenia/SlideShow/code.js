@@ -20,7 +20,12 @@ window.onload = function () {
 
         slideShow.appendChild(image);
 
-    }
+    };
+
+
+    slideShow.childNodes[0].setAttribute("class", "current");
+
+
 
 
 }
