@@ -31,9 +31,9 @@ window.onload = function () {
 
 setInterval(function () {
 
-    slideShow.childNodes[i % 3].setAttribute("class", "");
+    slideShow.childNodes[i % imagesSrc.length].setAttribute("class", "");
 
-    slideShow.childNodes[(i +1) % 3].setAttribute("class", "current");
+    slideShow.childNodes[(i +1) % imagesSrc.length].setAttribute("class", "current");
 
     i++;
 
