@@ -1,0 +1,25 @@
+.img {
+
+
+    max-width: 80px;
+
+
+}
+
+
+.img:hover {
+
+border-bottom: 2px solid blue;
+    margin-bottom: -2px;
+
+}
+
+
+#main-gallery {
+
+
+    width: 350px;
+margin-bottom: 10px;
+    line-height: 263px;
+
+}
