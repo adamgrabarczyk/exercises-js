@@ -15,12 +15,28 @@ tooltipContainer.id = "tooltipContainer";
 for (var i = 0; i < elementsWithtooltips.length; i++)
 {
 
-elementsWithtooltips[i].addEventListener("mouseover", function () {
+elementsWithtooltips[i].addEventListener("mouseover", function (e) {
 
-    alert("siema");
+   tooltipContainer.innerHTML = this.title;
 
-})
+   tooltipContainer.style.left = e.clientX + document.documentElement.scrollLeft +  "px";
+    tooltipContainer.style.top = e.clientY + document.documentElement.scrollTop +  "px";
 
+tooltipContainer.style.display = "block";
+
+});
+
+
+
+
+    elementsWithtooltips[i].addEventListener("mouseout", function (e) {
+
+        tooltipContainer.innerHTML = this.title;
+
+
+        tooltipContainer.style.display = "none";
+
+    })
 }
 
 }
