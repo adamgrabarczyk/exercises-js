@@ -7,6 +7,11 @@ function createTooltips() {
 
     var elementsWithtooltips = document.getElementsByClassName("tooltip");
 
+
+    var tooltipContainer = document.createElement("div");
+tooltipContainer.id = "tooltipContainer";
+    document.body.appendChild(tooltipContainer);
+
 for (var i = 0; i < elementsWithtooltips.length; i++)
 {
 
