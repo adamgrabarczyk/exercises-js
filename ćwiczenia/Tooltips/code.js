@@ -12,12 +12,21 @@ function createTooltips() {
 tooltipContainer.id = "tooltipContainer";
     document.body.appendChild(tooltipContainer);
 
+
+    var tmpTitles = [];
+
 for (var i = 0; i < elementsWithtooltips.length; i++)
 {
+
+    tmpTitles = elementsWithtooltips[i].title;
+
+elementsWithtooltips[i].tmp_id = i ;
 
 elementsWithtooltips[i].addEventListener("mouseover", function (e) {
 
    tooltipContainer.innerHTML = this.title;
+
+   this.title = "";
 
    tooltipContainer.style.left = e.clientX + document.documentElement.scrollLeft +  "px";
     tooltipContainer.style.top = e.clientY + document.documentElement.scrollTop +  "px";
@@ -30,6 +39,8 @@ tooltipContainer.style.display = "block";
 
 
     elementsWithtooltips[i].addEventListener("mouseout", function (e) {
+
+        this.title = tmpTitles[this.tmp_id];
 
         tooltipContainer.innerHTML = this.title;
 
