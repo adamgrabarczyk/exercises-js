@@ -1,0 +1,33 @@
+.thumbnail {
+
+
+    max-width: 80px;
+
+
+}
+
+
+.thumbnail:hover {
+
+border-bottom: 2px solid blue;
+    margin-bottom: -2px;
+
+}
+
+
+#mainImage {
+
+
+    width: 300px;
+margin-bottom: 10px;
+    line-height: 243px;
+
+}
+
+
+.current {
+
+    border-bottom: 2px solid blue;
+    margin-bottom: -2px;
+
+}

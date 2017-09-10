@@ -2,9 +2,28 @@
 
 
 
+
+function createTooltips() {
+
+    var elementsWithtooltips = document.getElementsByClassName("tooltip");
+
+for (var i = 0; i < elementsWithtooltips.length; i++)
+{
+
+elementsWithtooltips[i].addEventListener("mouseover", function () {
+
+    alert("siema");
+
+})
+
+}
+
+}
+
+
 window.onload = function () {
 
-
+createTooltips();
 
     var mainImage = document.getElementById("mainImage");
 
@@ -25,17 +44,17 @@ currentThumbnail.className += " current"
 
     for (var i = 0; i < thumbnails.length; i++) {
 
-         thumbnails[i].onmouseover = function() {
+         thumbnails[i].addEventListener("mouseover", function() {
 
              currentThumbnail.className = currentThumbnail.className.replace("current", "");
 
              currentThumbnail = this;
 
-             currentThumbnail.className += " current";
+             currentThumbnail.className += " current"; 
 
 image.src = this.getAttribute("src");
 
-         };
+         });
     }
 
 
