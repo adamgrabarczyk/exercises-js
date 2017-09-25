@@ -5,7 +5,8 @@ $(document).ready(function () {
 
 
 
-    
+    $('#content').load('content/index.html')
+
 
 });
 
