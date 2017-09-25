@@ -1,16 +1,13 @@
 
 
 
-
-window.onload = function () {
-
-
-alert("Siema")
+$(document).ready(function () {
 
 
 
+    
 
-}
+});
 
 
 
