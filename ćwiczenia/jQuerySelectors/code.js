@@ -22,7 +22,7 @@ function () {
 
             $(this).css("font-weight", "bold");
         }
-    );
+    ).css('color', 'blue');
 
 }
     
