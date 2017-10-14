@@ -14,7 +14,15 @@ function () {
 
     // $("#box + div").css("color", "red");  // pobierz tagi div które są obok tagu z identfikatorem #box
 
-    $("#box ~ div").css("color", "red");    // pobierz wszsytkie divy po divie z identyfikatorem box
+    // $("#box ~ div").css("color", "red");    // pobierz wszsytkie divy po divie z identyfikatorem box
+
+    $('div').click(
+
+        function () {
+
+            $('div').css("font-weight", "bold");
+        }
+    );
 
 }
     
