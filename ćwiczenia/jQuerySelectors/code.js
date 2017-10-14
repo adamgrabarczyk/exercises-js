@@ -6,7 +6,9 @@
 
 $('document').ready(
 function () {
-    alert('a');
+
+
+    $("div").css("color", "red");
 }
     
 );
