@@ -20,7 +20,7 @@ function () {
 
         function () {
 
-            $('div').css("font-weight", "bold");
+            $(this).css("font-weight", "bold");
         }
     );
 
