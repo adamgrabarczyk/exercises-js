@@ -12,7 +12,9 @@ function () {
 
     // $("div.a, li.b").css("color", "red");
 
-    $("#box + div").css("color", "red");  // pobierz tagi div które są obok tagu z identfikatorem #box
+    // $("#box + div").css("color", "red");  // pobierz tagi div które są obok tagu z identfikatorem #box
+
+    $("#box ~ div").css("color", "red");    // pobierz wszsytkie divy po divie z identyfikatorem box
 
 }
     
