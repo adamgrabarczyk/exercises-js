@@ -8,7 +8,7 @@ $('document').ready(
 function () {
 
 
-    $("div").css("color", "red");
+    $("div.a").css("color", "red");
 }
     
 );
