@@ -8,7 +8,7 @@ $('document').ready(
 function () {
 
 
-    $(".a").css("color", "red");
+    $("div > b").css("color", "red"); // znak oznacza ze ma byc bezposrednie dziecko
 }
     
 );
