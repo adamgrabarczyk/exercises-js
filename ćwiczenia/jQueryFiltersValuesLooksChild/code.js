@@ -47,6 +47,15 @@ function () {
 
     // $('div:parent').css("border", "2px solid blue"); wszystkie które są rodzicami
 
+
+
+//    Filtry Widoczności
+
+
+    // $('div:visible').css("border", "2px solid blue"); wszytkie widoczne divy
+
+    // hidden - to samo tylko ze ukryte
+
     
 
 
@@ -54,3 +63,11 @@ function () {
 }
 
 );
+
+
+
+
+
+
+
+
