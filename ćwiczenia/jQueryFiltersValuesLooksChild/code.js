@@ -38,7 +38,18 @@ function () {
 // FILTRY ZAWARTOŚCI
 
 
-    $("div:contains('this')").css("border", "2px solid blue");
+    // $("div:contains('this')").css("border", "2px solid blue"); te które zawieraja słowko this
+
+    // $('div:empty').css("border", "2px solid blue"); taki który jest pusty
+
+    // $('div:has(b.nazwa)').css("border", "2px solid blue"); taki który zawiera wewnatrz siebie selektor b
+
+
+    // $('div:parent').css("border", "2px solid blue"); wszystkie które są rodzicami
+
+    
+
+
 
 }
 
