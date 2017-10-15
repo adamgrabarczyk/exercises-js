@@ -56,7 +56,35 @@ function () {
 
     // hidden - to samo tylko ze ukryte
 
+
+    // FILTRY DZIECI
+
+
+    // $('ol li:nth-child(2)').css("border", "2px solid blue"); // drugi element listy (liczmy normalnie nie jak indeksy)
+
+
+    // $('ol li:nth-child(3n + 1)').css("border", "2px solid blue"); // co trzeci element (za n podstawiamy 0 i tak w zwyz)
+
+    // $('ol li:first-child').css("border", "2px solid blue"); // pierwsze dziecko
+
+    // $('ol li:last-child').css("border", "2px solid blue"); // ostatnie dziecko
+
+    // $('ol li:only-child').css("border", "2px solid blue"); // jedyne dziecko z..
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
