@@ -8,6 +8,8 @@ $('document').ready(
 function () {
 
 
+    // FILTRY PODSTAWOWE
+
 // $('div:first').css("border", "2px solid blue");  pierwszy element
 
     // $('div:last').css("border", "2px solid blue"); ostatni element
@@ -26,9 +28,17 @@ function () {
     // $('div:not(div:eq(2))').css("border", "2px solid blue"); nie taki ktorego indeks jest równy 2
 
 
+    // $("*:header").css("border", "2px solid blue"); //  wszystkie nagłówki
 
 
-    
+ //  - animated : tylko gdy jest aktualnie animowany
+
+
+
+// FILTRY ZAWARTOŚCI
+
+
+    $("div:contains('this')").css("border", "2px solid blue");
 
 }
 
