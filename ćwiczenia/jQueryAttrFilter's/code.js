@@ -15,7 +15,10 @@ function () {
 
     // $('img[src$=".png"]').css("border", "2px solid blue"); // konczy sie na png
 
-    $('img[src^="git"]').css("border", "2px solid blue");
+    // $('img[src^="git"]').css("border", "2px solid blue"); // zaczyna sie od ..
+
+
+    $('img[src*="."]').css("border", "2px solid blue");
 
 }
     
