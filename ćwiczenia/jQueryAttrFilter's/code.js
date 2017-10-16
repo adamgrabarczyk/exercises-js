@@ -8,7 +8,9 @@ $('document').ready(
 function () {
 
 
-$('img').css("border", "2px solid blue")
+$('img[alt]').css("border", "2px solid blue");
+
+
 
 }
     
