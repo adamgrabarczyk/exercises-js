@@ -23,7 +23,7 @@ function () {
 
     // $('img[alt][src="git.svg"]').css("border", "2px solid blue"); // taki ktory zawira jakies alt i ma src rowny..
 
-    
+
 
 }
     
