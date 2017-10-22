@@ -21,7 +21,9 @@
 $('document').ready(
 function () {
 
-$(":text").css("width", 500).css("position", "absolute").css("left", 100);
+// $(":text").css("width", 500).css("position", "absolute").css("left", 100);
+
+    $(":text").css({"width":200, "position": "absolute", "left": 100});
 
 $("form :checkbox"). click(
     
