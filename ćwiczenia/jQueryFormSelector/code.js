@@ -23,6 +23,15 @@ function () {
 
 $(":text").css("width", 500).css("position", "absolute").css("left", 100);
 
+$("form :checkbox"). click(
+    
+    function () {
+
+       var how =  $("form :checked").length;
+
+       $("#info").text("aktualnie jest zanaczonych " + how + " ilość checkboxow")
+    }
+)
 
 }
     
