@@ -33,6 +33,48 @@ var person = {
 
 var {name: n, age: a, city: c = "Gdańsk"} = person;
 
-alert(n);
-alert(a);
-alert(c);
+// alert(n);
+// alert(a);
+// alert(c);
+
+
+
+
+
+
+
+
+
+function getNumbers() {
+
+    return[1,2,3,4,5];
+
+}
+
+
+var [ab, cd, ef] = getNumbers();
+
+
+alert(ab);
+alert(cd);
+alert(ef);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
