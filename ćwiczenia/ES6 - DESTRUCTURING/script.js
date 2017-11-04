@@ -31,8 +31,8 @@ var person = {
 }
 
 
-var {name, age, city} = person;
+var {name: n, age: a, city: c} = person;
 
-alert(name);
-alert(age);
-alert(city);
+alert(n);
+alert(a);
+alert(c);
