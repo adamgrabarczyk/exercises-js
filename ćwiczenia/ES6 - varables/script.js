@@ -36,3 +36,8 @@ const env = 'DEV';
     const env = 'PRO';
 }
 console.log(env);
+
+
+
+const config = {};
+console.log(config);
