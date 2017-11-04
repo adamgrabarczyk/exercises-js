@@ -11,3 +11,16 @@ function Counter() {
 
 
 var c = new Counter;
+
+
+
+
+let product = {
+    id: 293,
+    showId: function () {
+        return this.id
+    }
+}
+
+
+console.log(product.showId());
