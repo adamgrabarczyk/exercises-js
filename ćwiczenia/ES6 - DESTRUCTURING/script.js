@@ -31,7 +31,7 @@ var person = {
 }
 
 
-var {name: n, age: a, city: c} = person;
+var {name: n, age: a, city: c = "Gdańsk"} = person;
 
 alert(n);
 alert(a);
