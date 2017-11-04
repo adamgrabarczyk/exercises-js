@@ -15,3 +15,8 @@ const sumValuearrow = (a,b) => {
 }
 
 alert(sumValuearrow(5,8));
+
+
+const sumValueShortArrow = (a,b) => a +b ;
+
+alert(sumValueShortArrow(5,20));
