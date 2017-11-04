@@ -52,11 +52,11 @@ function getNumbers() {
 }
 
 
-var [ab, cd, ef] = getNumbers();
+var [ab, , ef] = getNumbers();
 
 
 alert(ab);
-alert(cd);
+// alert(cd);
 alert(ef);
 
 
