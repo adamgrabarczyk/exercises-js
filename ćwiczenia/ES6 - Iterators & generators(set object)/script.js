@@ -10,7 +10,9 @@ set.add(20);
 set.add('ok');
 set.add(true);
 
-console.log(set.has(10)); 
+set.delete(10);           // operujemy tylko i wylacznie na wartosciach bo nie ma kluczy
+
+console.log(set.has(10));
 
 for (const v of set)
 {
