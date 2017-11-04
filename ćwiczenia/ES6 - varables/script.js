@@ -32,7 +32,7 @@ if ( x == 1) {
 
 
 const env = 'DEV';
-
-const env = 'PRO';
-
+{
+    const env = 'PRO';
+}
 console.log(env);
