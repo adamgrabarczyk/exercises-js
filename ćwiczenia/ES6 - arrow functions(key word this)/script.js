@@ -17,9 +17,7 @@ var c = new Counter;
 
 let product = {
     id: 293,
-    showId: function () {
-        return this.id
-    }
+    showId: () => this. id
 }
 
 
