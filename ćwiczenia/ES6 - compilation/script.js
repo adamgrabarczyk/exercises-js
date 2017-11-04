@@ -11,3 +11,8 @@ function sumNumbers(x = 1, y = 2) {
 
 
 alert(sumNumbers());
+
+
+const arr = [1 , 2 , 3 ,4];
+
+alert(arr.includes(1));
