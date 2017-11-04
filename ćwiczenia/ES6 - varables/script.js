@@ -5,7 +5,12 @@ function showOrderValue() {
 
     var  orderValue = 320;
 
-    alert(orderValue);
+    if ( orderValue >= 100) {
+
+        var newOrderValue = orderValue - orderValue *0.1
+    }
+
+    alert(newOrderValue);
 
 }
 
