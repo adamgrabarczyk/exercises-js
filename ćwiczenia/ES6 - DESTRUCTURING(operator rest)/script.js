@@ -4,8 +4,13 @@
 
 function getValue(...Args) {     // ... trzykropek mowi ze bierze pod uwage wszystkie argumenty ktore zostana przekazane do funkcji
 
-    alert(Args.length);
+    var values = Args.sort();
+
+    return values;
+
 }
 
 
-getValue(10,12,15);
+
+
+alert(getValue('string', 'boolean', 'number'));
