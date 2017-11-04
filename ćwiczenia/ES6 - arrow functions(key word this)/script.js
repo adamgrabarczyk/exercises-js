@@ -13,19 +13,27 @@ function Counter() {
 var c = new Counter;
 
 
+//
+//
+// let product = {
+//     id: 293,
+//     showId: () => this. id
+// }
+//
+//
+// console.log(product.showId());
+//
+//
+//
+// let Product = () => {};
+//
+//
+// let p = new Product();
 
 
-let product = {
-    id: 293,
-    showId: () => this. id
-}
 
+// let car = () => {id: 1245};  // undefined bo nie potrafi odczytac tego jako literału obiektowego tylko jako ciało funkcji
 
-console.log(product.showId());
+let car = () => ({id: 1245});
 
-
-
-let Product = () => {};
-
-
-let p = new Product();
+console.log(car());
