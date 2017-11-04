@@ -22,3 +22,10 @@ let product = {
 
 
 console.log(product.showId());
+
+
+
+let Product = () => {};
+
+
+let p = new Product();
