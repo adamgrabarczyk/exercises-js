@@ -9,7 +9,7 @@ m.set(1, 'React');
 m.set(2, 'Angular');
 m.set(3, 'Ember');
 
-m.clear();
+// m.clear();   czysci obekt
 
 console.log(m);
 
