@@ -4,7 +4,9 @@
 
 let price = 199;
 let currency = "PLN";
-let label = `Cena wynosi: ${price} ${currency}`
+let discount = 0.1;
+
+let label = `Cena wynosi: ${price - price * discount} ${currency}`
 
 alert(label);
 
