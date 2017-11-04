@@ -40,4 +40,6 @@ console.log(env);
 
 
 const config = {};
-console.log(config);
+config.env = 'DEV'
+
+console.log(config.env);
