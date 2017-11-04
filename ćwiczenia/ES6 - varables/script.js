@@ -17,9 +17,6 @@
 //
 // showOrderValue();
 
-
-
-
 let score = 10;
 
 let x = 1 ;
@@ -45,3 +42,36 @@ config.env = 'PRO';
 
 
 console.log(config.env);
+
+
+
+showVariable();
+
+function showVariable() {
+
+    var x = 2;
+
+    console.log(x);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
