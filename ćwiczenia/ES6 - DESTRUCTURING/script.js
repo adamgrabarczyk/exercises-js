@@ -26,7 +26,7 @@ var person = {
 
     name: 'tomek',
     age: 30,
-    city: "Gdańsk"
+    // city: "Gdańsk"
 
 }
 
