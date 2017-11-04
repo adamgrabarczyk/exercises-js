@@ -51,7 +51,7 @@ function showVariable() {
 
     console.log(x);
 
-    let x = 2;
+    const x = 2;
 
 
 
