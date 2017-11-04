@@ -7,8 +7,8 @@ function showOrderValue() {
 
     if ( orderValue >= 100) {
 
-        var newOrderValue = orderValue - orderValue *0.1
-    }
+        let newOrderValue = orderValue - orderValue *0.1 // zmienne definiowane za pomocą let maja swoj scope tylko w bloku w ktorym zostaly zdefioniowane
+     }
 
     alert(newOrderValue);
 
@@ -16,3 +16,12 @@ function showOrderValue() {
 
 
 showOrderValue();
+
+
+
+
+// let score = 10;
+//
+//
+//
+// alert(score);
