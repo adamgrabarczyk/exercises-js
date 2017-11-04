@@ -49,9 +49,11 @@ showVariable();
 
 function showVariable() {
 
+    console.log(x);
+
     var x = 2;
 
-    console.log(x);
+
 
 }
 
