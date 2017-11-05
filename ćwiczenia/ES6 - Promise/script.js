@@ -46,7 +46,8 @@ let p2 = new Promise((resolve, reject) => {
 
 let p3 = new Promise((resolve, reject) => {
 
-    resolve('Ok3');
+    // resolve('Ok3');
+    reject('warnig')
 });
 
 
