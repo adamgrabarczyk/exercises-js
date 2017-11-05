@@ -1,12 +1,12 @@
 
 // premise to obiekt/classa
 
-let x = 5;
+let x = 1;
 
 
 let p = new Promise(function (resolve, reject) {
 
-if (x = 1){
+if (x == 1){
     resolve('ok');
 }else {
     reject(Error('błąd'));
@@ -18,3 +18,10 @@ if (x = 1){
 
 // console.log(p);
 
+p.then(function(result){
+
+    console.log(result);
+
+}).catch(function (error) {
+    console.log(error);
+})
