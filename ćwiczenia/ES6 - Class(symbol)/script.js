@@ -19,10 +19,13 @@ let person = {
 
 let p = Symbol();
 
-person[s] = '137';
+person[p] = '137';
 
 // console.log(person);
 
 for (let i  in person) {
     console.log(i);
 }
+
+
+console.log(person[p]);
