@@ -1,7 +1,7 @@
 
 // premise to obiekt/classa
 
-let x = 1;
+let x = 2;
 
 
 let p = new Promise(function (resolve, reject) {
