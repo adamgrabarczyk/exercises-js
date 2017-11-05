@@ -29,3 +29,6 @@ for (let i  in person) {
 
 
 console.log(person[p]);
+
+
+console.log(Object.getOwnPropertySymbols(person));
