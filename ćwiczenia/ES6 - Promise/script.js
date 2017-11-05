@@ -52,7 +52,7 @@ let p3 = new Promise((resolve, reject) => {
 
 
 
-Promise.all([p1, p2, p3]).then(result => {
+Promise.all([p1, p2, p3]).then(results => {
     console.log(results);
 }).catch(error => {
     console.log(error);
