@@ -53,6 +53,21 @@ class Car {
 
 }
 
+
+
+class CarArticle extends Car {
+
+    constructor(id, title, category) {
+        super(id,title );
+
+        this.category = category;
+
+    }
+
+}
+
+
+
 const car = new Car(897, 'siema');
 
 const car2 = new Car(567, 'papapa');
@@ -61,3 +76,19 @@ const car2 = new Car(567, 'papapa');
 // console.log(car.getId());
 //  console.log(car.id);
 // console.log(car.title);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
