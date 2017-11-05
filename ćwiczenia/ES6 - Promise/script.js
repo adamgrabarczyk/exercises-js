@@ -25,3 +25,47 @@ p.then(function(result){
 }).catch(function (error) {
     console.log(error);
 })
+
+
+
+////////////////////////////////////////////
+
+
+
+let p1 = new Promise((resolve, reject) => {
+
+    resolve('Ok1');
+});
+
+
+let p2 = new Promise((resolve, reject) => {
+
+    resolve('Ok2');
+});
+
+
+let p3 = new Promise((resolve, reject) => {
+
+    resolve('Ok3');
+});
+
+
+
+
+Promise.all([p1, p2, p3]).then(result => {
+    console.log(results);
+}).catch(error => {
+    console.log(error);
+}) ;
+
+
+
+
+
+
+
+
+
+
+
+
