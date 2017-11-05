@@ -66,6 +66,8 @@ class CarArticle extends Car {
 
 }
 
+const blog1 = new CarArticle(23,"opels astra", 'samochody');
+
 
 
 const car = new Car(897, 'siema');
@@ -73,6 +75,8 @@ const car = new Car(897, 'siema');
 const car2 = new Car(567, 'papapa');
 
  console.log(Car.compareId(car,car2));
+
+ console.log(blog1);
 // console.log(car.getId());
 //  console.log(car.id);
 // console.log(car.title);
