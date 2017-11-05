@@ -8,15 +8,17 @@ checkAge() {
             if (this.age >= 18)
             {return true}else
             {return false}
-        }
-
+        },
+['user' + name + age]: 'Ok'
     };
 };
 
 
-let p =getPErson("tomek", 19);
+let p = getPErson("tomek", 19);
 
 
 console.log(p);
 
 console.log(p.checkAge());
+
+console.log(p.usertomek19);
