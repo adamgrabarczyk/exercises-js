@@ -77,6 +77,8 @@ const car2 = new Car(567, 'papapa');
  console.log(Car.compareId(car,car2));
 
  console.log(blog1);
+console.log(blog1.getId());
+
 // console.log(car.getId());
 //  console.log(car.id);
 // console.log(car.title);
