@@ -17,6 +17,10 @@ let person = {
 }
 
 
+let p = Symbol();
+
+person[s] = '137';
+
 // console.log(person);
 
 for (let i  in person) {
